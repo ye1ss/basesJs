@@ -1,0 +1,215 @@
+🚀 SEMANA 1 – Fundamentos de JS + DOM Básico
+    🎯 Qué aprenderá
+    let, const, tipos de datos
+    Operadores aritméticos
+    Funciones (parámetros, return)
+    DOM básico:
+    querySelector()
+    .innerText
+    .value
+    Eventos: onclick, addEventListener
+
+    📝 Ejercicios fundamentales
+        1. Variables y operaciones
+        Crea variables con tu nombre, edad, ciudad, etc.
+        Calcula:
+        suma de 2 números
+        promedio de 3 números
+        convertir euros → dólares
+        2. Funciones básicas
+        Crea una función que devuelva el doble de un número.
+        Otra que reciba nombre y devuelva “Hola, nombre”.
+        Otra que reciba 3 números y devuelva el mayor.
+        3. DOM básico
+        Cambiar el texto de un <h1> desde JS.
+        Leer el valor de un input y mostrarlo en un <p>.
+        Al presionar un botón, cambiar el color del texto.
+        🧩 Mini-retos
+        Haz 3 botones que cambien el fondo de la página.
+        Haz un botón “ocultar texto” / “mostrar texto”.
+
+    🧪 Proyecto de la semana
+    Calculadora básica (suma, resta, multiplicación, división).
+
+🚀 SEMANA 2 – Arrays, Bucles y Strings
+    🎯 Qué aprenderás
+    Arrays: push, pop, splice, length
+    Bucles: for, while, forEach
+    Strings: .toUpperCase(), .slice(), .includes()
+    Math.random()
+
+    📝 Ejercicios fundamentales
+        1. Arrays
+        Crea un array con 5 frutas y:
+        añade una
+        elimina una
+        cambia una posición
+        2. Loops
+        Imprime los números del 1 al 50.
+        Suma todos los números de un array.
+        Recorre un array de nombres y muéstralos uno por uno.
+        3. Strings
+        Pasar un texto a mayúsculas.
+        Extraer las primeras 3 letras de una palabra.
+        Detectar si un texto contiene una palabra (“admin”, “hola”, etc).
+        4. Math.random
+        Generar un número aleatorio entre 1 y 10.
+        Generar 10 números random y meterlos en un array.
+        🧩 Mini-retos
+        Crear un array con 10 números y mostrar solo los pares.
+        Ordenar un array manualmente (sin .sort()).
+
+    🧪 Proyecto de la semana
+    Generador de contraseñas aleatorias.
+
+🚀 SEMANA 3 – DOM Intermedio + localStorage
+    🎯 Qué aprenderás
+    Crear elementos desde JS: createElement
+    Insertarlos: appendChild
+    Eliminar elementos: .remove()
+    Eventos: input, click
+    Guardar datos en localStorage
+
+    📝 Ejercicios fundamentales
+        1. DOM dinámico
+        Crea una lista vacía y un input.
+        Al escribir y presionar un botón, añade un <li> a la lista.
+        Haz un botón para borrar el último elemento.
+        2. Eventos
+        Al escribir en un input, mostrar en vivo lo que se escribe.
+        Botón que cambie la imagen mostrada por otra.
+        3. localStorage
+        Guardar un número en localStorage.
+        Guardar un texto y recuperarlo al recargar.
+        Guardar un array en localStorage en formato JSON.
+        🧩 Mini-retos
+        Contador de visitas: cada recarga suma 1.
+        Guardar un modo oscuro/claro persistente.
+
+    🧪 Proyecto de la semana
+    To-Do List completa con localStorage.
+
+🚀 SEMANA 4 – Timers + Lógica de estados
+    🎯 Qué aprenderás
+    setInterval, setTimeout, clearInterval
+    Sistemas de estado: “iniciado”, “pausado”, “reset”
+    Manipular fechas y tiempos
+    Condicionales avanzadas
+
+    📝 Ejercicios fundamentales
+        1. Intervalos
+        Un contador que suba cada 1 segundo.
+        Un contador que baje desde 10 a 0.
+        2. setTimeout
+        Mostrar un mensaje 3 segundos después.
+        Hacer un pequeño “pop-up” que desaparece solo.
+        3. Control de estados
+        Botón Start
+        Botón Stop
+        Botón Reset
+        🧩 Mini-retos
+        Crear un reloj en tiempo real (hora actual).
+        Temporizador configurado por el usuario.
+        
+    🧪 Proyecto de la semana
+    Cronómetro + Temporizador.
+
+🚀 SEMANA 5 – Lógica, Juegos y Condicionales
+🎯 Qué aprenderás
+
+switch
+
+Condiciones múltiples
+
+Generación aleatoria avanzada
+
+Comparaciones
+
+Flujo de juegos
+
+📝 Ejercicios fundamentales
+1. Condicionales
+
+Determinar si un número es par o impar.
+
+Saber si un usuario puede entrar (edad mínima).
+
+Comparar 3 números y decir cuál es mayor.
+
+2. Switch
+
+Programa que diga el día de la semana según un número.
+
+Programa que devuelva un mensaje según una nota (A, B, C, etc).
+
+3. Random + lógica
+
+Simular un dado (1–6).
+
+Simular tirar dos dados y sumar el resultado.
+
+🧩 Mini-retos
+
+Juego simple: “lanzar moneda” (cara o cruz).
+
+Juego de adivinar un número entre 1 y 100.
+
+🧪 Proyectos de la semana
+
+Piedra, Papel o Tijera
+
+Adivina el Número
+
+🚀 SEMANA 6 – Proyecto Final + JS moderno
+🎯 Qué aprenderás
+
+map, filter, reduce
+
+Objetos { ... }
+
+Estructurar código en funciones
+
+Buenas prácticas
+
+Proyecto grande real
+
+📝 Ejercicios fundamentales
+1. Objetos
+
+Crea un objeto persona con nombre, edad y ciudad.
+
+Crea un array de personas y:
+
+filtra solo los mayores
+
+crea un array de los nombres
+
+2. Métodos avanzados
+
+Usar .map() para transformar un array.
+
+Usar .filter() para quedarte con lo que cumpla una condición.
+
+Usar .reduce() para sumar todos los valores.
+
+3. Estructuración
+
+Función para crear un elemento
+
+Función para actualizarlo
+
+Función para guardarlo en localStorage
+
+🧩 Mini-retos
+
+Filtrar una lista según un buscador.
+
+Ordenar elementos del DOM según un criterio.
+
+🧪 Proyecto Final (elige uno)
+✔ Mini Tienda con Carrito
+✔ Gestor de Notas
+✔ Galería de imágenes con filtros
+✔ Dashboard de estadísticas
+✔ Reproductor de música
+✔ App de recetas

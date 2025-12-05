@@ -1,0 +1,96 @@
+<!--EJERCICIOS FUNDAMENTALES-->
+<script>
+    //1.variables y operaciones
+    //let se puede cambiar y const es una variable que no se puede modificar
+    const nombre= "Yeismil";
+    let edad= 23;
+    let num= 2;
+    console.log(edad + num);
+
+    //2.funciones básicas
+    function doble (){
+        console.log(num * 2);
+    }
+
+    function persona(){
+        try{
+            let entrada= prompt("Escribe tu nombre");
+            console.log("Hola, "+ entrada)
+        }catch{
+            console.log("Error al introducir nombre")
+        }
+    }
+
+    function numero(){
+        try{
+            let numeros = prompt("Introduce tres números separados por comas").split(",").map(Number).sort((a, b) => b - a);
+            console.log("De mayor a menor:", numeros);
+
+        }catch{
+            console.log("Error al introdicir números")
+        }
+    }
+
+
+
+</script>
+
+<body>
+    <!--3.dom básico-->
+    <h1 id="texto" >Hola como estas</h1>
+    <p id="miFrase"></p>
+    <button id="cambiarColor">Cambiar color texto</button>
+
+    <button id="fondo1">Fondo1</button>
+    <button id="fondo2">Fondo2</button>
+
+    <button id="ocultar">Ocultar</button>
+    <p id="ocultarTexto">Texto para ocultar</p>
+    
+</body>
+
+<script>
+        //3.dom básico
+        function textos (){
+            let titulo= document.getElementById('texto');
+            console.log(titulo);
+            titulo.textContent = 'Cambié el textooo';
+        }
+
+        function parrafo(){
+            let frase= prompt("Escribe una frase");
+            console.log("El usuario escribió:", frase);
+            document.getElementById('miFrase').textContent= frase;
+        }
+
+        const boton= document.getElementById('cambiarColor');
+            boton.addEventListener('click', function(){
+                boton.style.color= "red";
+                boton.textContent= "El boton cambio de color";
+            })
+        
+        const fondo1= document.getElementById('fondo1');
+        const fondo2= document.getElementById('fondo2');
+        const cuerpo= document.body;
+
+            fondo1.addEventListener('click', function(){
+                cuerpo.style.backgroundColor= "gray";
+            })
+
+            fondo2.addEventListener('click', function(){
+                cuerpo.style.backgroundColor= "red";
+            })
+
+        const ocultar= document.getElementById('ocultar');
+        const ocultarTexto= document.getElementById('ocultarTexto');
+            ocultar.addEventListener('click', function(){
+                if(ocultarTexto.style.display == 'none'){
+                    ocultarTexto.style.display= 'block';
+                    ocultar.textContent= "Ocultar";
+                }else{
+                    ocultarTexto.style.display= 'none';
+                    ocultar.textContent= 'Mostrar';
+                }
+            })
+
+</script>
