@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día 2</title>
+</head>
+
+<script>
+    //1.Arrays
+    let frutas = ['fresa', 'manzana', 'plátano', 'pera', 'naranja'];
+    let añadir= frutas.push('piña');
+    let eliminar= frutas.splice(1, 1);
+    let elemento= frutas.splice(2, 1)[0];
+    frutas.splice(0, 0, elemento);
+    console.log(frutas);
+
+    //2.Loops
+    function numeros(){
+        for(let i= 1; i<= 50; i++){
+            console.log(i);
+        }
+    }
+    
+    let sumnum= [5, 5, 5];
+    let suma= sumnum.reduce((total, numero)=> total+numero, 0)
+    console.log("La suma del array total es de " +suma);
+
+    function leerNombres(){
+        let nombres= ["Natalia", "Edu", "Rolando", "Jovita", "Ainara"];
+        nombres.forEach(nombre => {console.log(nombre)}) //manera 1 de recorrer el array y mostrarlo uno a uno
+        for(let i=0; i < nombres.length; i++){
+            console.log(nombres[i]) //manera 2 de recorrer el array y mostrarlo uno a uno
+        }
+    }
+    
+    //3.Strings
+    let texto= "Hola como estais";
+
+    let mayusculas= texto.toUpperCase(); //texto en mayusculas
+    console.log(mayusculas)
+
+    let separarPalabras= texto.split(" "); //separar en palabras
+    let separarLetras= separarPalabras[0].slice(0, 3); //escogemos la primera palabra con [0], y obtenemos los 3 primeros
+    console.log(separarLetras)
+
+    let contienePalabra= texto.toLocaleLowerCase().includes('hola');
+    console.log(contienePalabra)
+
+    //4.Math.random
+    let numerosAleat= [];
+    let numRandom= Math.floor(Math.random() * 10) +1;
+
+    for(let i= 0; i < 10; i++){
+        let numAleatorio= Math.floor(Math.random() * 10) +1;
+        numerosAleat.push(numAleatorio)
+    }
+
+    console.log(numerosAleat)
+
+    //MINI RETO
+    let numPares= [];
+    for(let i=0; i <= 10; i++){
+        if (i % 2 == 0){
+            numPares.push(i)
+        }
+    }
+
+    console.log(numPares)
+
+</script>
+
+<body>
+    
+</body>
+</html>
