@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador contraseñas aleatorias</title>
 </head>
+
 <body>
     <h3>Generador de contraseñas aleatorias</h3>
-    <button class="btn">Generar contraseña</button>
-    
+    <button onClick="mostrarPassword()" class="btn">Generar contraseña</button>
+    <p>Contraseña: <strong id="resultado"></strong></p>
+
+
+    <script>
+        // Tu lógica actual (sin cambios)
+        function generarPassword(longitudTotal = 10) {
+            const mayusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            const numeros = "0123456789";
+            const minusculas = "abcdefghijklmnopqrstuvwxyz";
+
+            const obtenerAleatorio = (conjunto) => {
+                const array = new Uint32Array(1);
+                window.crypto.getRandomValues(array);
+                return conjunto[array[0] % conjunto.length];
+            };
+
+            let password = obtenerAleatorio(mayusculas);
+            password += obtenerAleatorio(numeros);
+            password += obtenerAleatorio(numeros);
+
+            for (let i = password.length; i < longitudTotal; i++) {
+                password += obtenerAleatorio(minusculas);
+            }
+
+            return password;
+        }
+
+        // NUEVA FUNCIÓN: Se ejecuta al pulsar el botón
+        function mostrarPassword() {
+            // 1. Ejecutamos la lógica y guardamos el resultado en una variable
+            const nuevaPassword = generarPassword(12);
+
+            // 2. Buscamos el elemento con id="resultado" y le metemos el texto
+            document.getElementById("resultado").innerText = nuevaPassword;
+        }
+    </script>
 </body>
+
 </html>
